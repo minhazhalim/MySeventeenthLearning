@@ -3,18 +3,20 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-     <title>Web Components Crash Course</title>
+     <title>Building a REAL Web Component from Scratch!</title>
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h1>welcome to the web component tutorial</h1>
-     <user-card name="minhaz halim" avatar="https://randomuser.me/api/portraits/men/1.jpg">
-          <div slot="email">mhzim93@gmail.com</div>
-          <div slot="phone">+8801961227611</div>
-     </user-card>
-     <user-card name="minhaz halim" avatar="https://randomuser.me/api/portraits/women/1.jpg">
-          <div slot="email">zim.27@outlook.com</div>
-          <div slot="phone">+8801961227611</div>
-     </user-card>
+     <div class="container">
+          <h1>my awesome tooltip</h1>
+          <p>Lorem ipsum, dolor sit amet
+               <popup-notify tip-background="#ffcc00" tip-color="#fff">
+                    <span slot="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, explicabo.</span>
+               </popup-notify>
+          consectetur adipisicing elit. Fugit facere,<popup-notify tip-color="gray">
+                    <span slot="message">yo what's up bro!!</span>
+               </popup-notify>delectus architecto eius laborum adipisci.</p>
+     </div>
      <script src="script.js"></script>
 </body>
 </html>
